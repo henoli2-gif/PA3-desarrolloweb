@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+.pagina {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.tarjeta {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin-bottom: 6px;
+  font-size: 1.05rem;
+}
+
+.ayuda {
+  color: #64748b;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+button.secundario {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #cbd5e1;
+}
+
+button.peligro {
+  background: #dc2626;
+}
+
+button.enlace {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 0;
+  background: transparent;
+  color: #2563eb;
+}
+
+.mensaje {
+  color: #b91c1c;
+}
+
+.mensaje.ok {
+  color: #15803d;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.lista {
+  margin-top: 16px;
+}
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.tarea p {
+  margin: 0;
+}
+
+.tarea h3,
+.tarea p {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .encabezado,
+  .tarea {
+    flex-direction: column;
+  }
+}
